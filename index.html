@@ -330,7 +330,7 @@
                     </h5>
                   </div>
                   <div>
-                      <form action="https://formspree.io/mwkrokog" method="post" role="form" class="contactForm">
+                      <form action="https://formspree.io/mwkrokog" method="post" role="form" class="was-validated">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage">Unfortunately your message was unable to be sent</div>
                       <div class="row">
@@ -350,6 +350,9 @@
                             <div class="form-group">
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:1" data-msg="Please enter at least 2 chars of subject" />
                               <div class="validation"></div>
+                              <div class="invalid-feedback">
+                                Please provide a valid subject.
+                              </div>
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
@@ -359,7 +362,7 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded" onclick="changeSubject()">Send Message</button>
+                          <button type="submit" class="button button-a button-big button-rouded" onclick="changeSubject()" onerror="emailInvalid()">Send Message</button>
                         </div>
                         <input type="hidden" name="_subject" value="New sub" id="emSubject"/>
                         <script language="javascript" type="text/javascript">
@@ -367,6 +370,10 @@
                           {
                             var input = document.getElementById('subject').value;
                             document.getElementById("emSubject").value = input;
+                          }
+                          function emailInvalid()
+                          {
+                            alert("Email fields invalid!");
                           }
                         </script>
                         <input type="hidden" name="_next" value="/contactThanks.html"/>
