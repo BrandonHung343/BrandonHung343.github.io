@@ -359,12 +359,15 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          <button type="submit" class="button button-a button-big button-rouded" onclick="changeSubject()">Send Message</button>
                         </div>
                         <input type="hidden" name="_subject" value="New sub" id="emSubject"/>
                         <script language="javascript" type="text/javascript">
-                          var input = document.getElementById('subject').value;
-                          document.getElementById("emSubject").value = input;
+                          function changeSubject()
+                          {
+                            var input = document.getElementById('subject').value;
+                            document.getElementById("emSubject").value = input;
+                          }
                         </script>
                         <input type="hidden" name="_next" value="/contactThanks.html"/>
                         <input type="text" name="_gotcha" style="display:none"/>
