@@ -160,7 +160,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #ff4500;
   margin: 0 auto;
 }
 
@@ -176,6 +176,20 @@ a:hover {
 }
 
 .title-left:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: #ff6347;
+  width: 100px;
+  bottom: -12px;
+}
+
+.title-left-2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title-left-2:before {
   content: '';
   position: absolute;
   height: 3px;
@@ -326,7 +340,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: #ff4500;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -481,26 +495,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #ff4500;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #ff4500;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #ff4500;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #ff4500;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #ff4500
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -688,56 +702,6 @@ a:hover {
   color: #4e4e4e;
 }
 
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #0078ff;
-}
-
-/*======================================
-//--//-->   SERVICES
-======================================*/
-
-.service-box {
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-}
-
-.service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.service-box .service-ico {
-  margin-bottom: 1rem;
-  color: #1e1e1e;
-}
-
-.service-box .ico-circle {
-  transition: all 500ms ease;
-  font-size: 4rem;
-}
-
-.service-box .s-title {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: .4rem 0;
-}
-
-.service-box .s-description {
-  color: #4e4e4e;
-}
 
 /*======================================
 //--//-->   COUNTER
@@ -917,51 +881,6 @@ a:hover {
   float: right;
 }
 
-/*======================================
-//--//-->   BLOG-SINGLE
-======================================*/
-
-.post-box,
-.form-comments,
-.box-comments,
-.widget-sidebar {
-  padding: 2rem;
-  background-color: #fff;
-  margin-bottom: 3rem;
-}
-
-.blog-wrapper .article-title {
-  font-size: 1.5rem;
-}
-
-.blog-wrapper .post-meta {
-  margin: 1rem 0;
-}
-
-.blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
-  margin-top: 1rem;
-}
-
-.blog-wrapper .post-meta ul li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.blog-wrapper .post-meta ul a {
-  color: #0078ff;
-}
-
-.blog-wrapper .post-meta ul span {
-  color: #1e1e1e;
-}
-
-.blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
-  padding: 18px;
-  font-style: italic;
-}
-
 /*------/ Comments /------*/
 
 .box-comments .list-comments li {
@@ -1071,7 +990,8 @@ a:hover {
 
 footer {
   text-align: center;
-  color: #fff;
+  font-weight: bold;
+  color: #000;
   padding-bottom: 4rem;
 }
 
@@ -1084,7 +1004,7 @@ footer .credits {
 }
 
 footer .credits a {
-  color: #fff;
+  color: #000;
 }
 
 /*======================================
@@ -1092,8 +1012,8 @@ footer .credits a {
 ======================================*/
 
 #sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
+  color: #ffa07a;
+  border: 1px solid #ffa07a;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1140,7 +1060,7 @@ footer .credits a {
   user-select: none;
   font-size: 1rem;
   border-radius: .3rem;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
 }
@@ -1150,15 +1070,15 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #0062d3;
+  background-color: #fa8072;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
-  background-color: #0078ff;
+  background-color: #ff4500;
   color: #fff;
-  border-color: #cde1f8;
+  border-color: #ffa07a;
 }
 
 .button-big {
@@ -1219,7 +1139,12 @@ footer .credits a {
   }
 
   .intro .intro-subtitle {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .intro .intro-subtitle-2 {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 
   .intro-single .intro-title {
