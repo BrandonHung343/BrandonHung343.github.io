@@ -330,7 +330,7 @@
                     </h5>
                   </div>
                   <div>
-                      <form action="https://formspree.io/mwkrokog" method="post" role="form" class="was-validated">
+                      <form action="https://formspree.io/mwkrokog" method="post" role="form" class="needs-validation">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage">Unfortunately your message was unable to be sent</div>
                       <div class="row">
@@ -365,10 +365,10 @@
                           <button type="submit" class="button button-a button-big button-rouded" onclick="changeSubject()" onerror="emailInvalid()">Send Message</button>
                         </div>
                         <input type="hidden" name="_subject" value="New sub" id="emSubject"/>
-                        <script language="javascript" type="text/javascript">
+                        <script language="javascript" type="text/javascript" src="sanitizer/HtmlSanitizer.js">
                           function changeSubject()
                           {
-                            var input = document.getElementById('subject').value;
+                            var input = HtmlSanitizer.SanitizeHtml(document.getElementById('subject').value);
                             document.getElementById("emSubject").value = input;
                           }
                           function emailInvalid()
