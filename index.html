@@ -29,6 +29,7 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+  <script src="sanitizer/HtmlSanitizer.js"></script>
 </head>
 
 <body id="page-top">
@@ -365,11 +366,13 @@
                           <button type="submit" class="button button-a button-big button-rouded" onclick="changeSubject()" onerror="emailInvalid()">Send Message</button>
                         </div>
                         <input type="hidden" name="_subject" value="New sub" id="emSubject"/>
-                        <script language="javascript" type="text/javascript" src="sanitizer/HtmlSanitizer.js">
+                        <script language="javascript" type="text/javascript">
                           function changeSubject()
                           {
-                            var input = HtmlSanitizer.SanitizeHtml(document.getElementById('subject').value);
-                            document.getElementById("emSubject").value = input;
+                            var input = document.getElementById('subject').value;
+                            var result = HtmlSanitizer.SanitizeHtml(input);
+                            document.getElementById("emSubject").value = result;
+                            alert(result)
                           }
                           function emailInvalid()
                           {
