@@ -733,10 +733,11 @@ a:hover {
 ======================================*/
 
 .work-box {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  height: 400px;
 }
 
 .work-box:hover img {
@@ -747,6 +748,10 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+  float: center;
 }
 
 .work-img img {
@@ -782,6 +787,7 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+  padding-top: 1rem;
 }
 
 /*======================================
