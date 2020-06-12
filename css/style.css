@@ -740,8 +740,8 @@ a:hover {
 }
 
 .work-box:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .work-img {

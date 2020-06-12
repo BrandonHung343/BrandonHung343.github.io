@@ -157,44 +157,103 @@
             <h3 class="title-a">
               Projects
             </h3>
-            <p class="subtitle-a">
+            <!--p class="subtitle-a">
               Coming soon!
-            </p>
+            </p-->
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
       <!--TODO: put in however many projects I want to list on here-->
-      <!--div class="row">
+      <div class="row">
         <div class="col-md-4">
           <div class="work-box">
-            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+            <a href="img/least_squares/parabola_fit.png" data-lightbox="least_squares" data-title="Since the problem is overdetermined, the pseudoinverse is taken to minimize the sum of squared distances.">
               <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
+                <img src="img/least_squares/parabola_fit.png" alt="" class="img-fluid">
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+            </a>
+            <a href="img/least_squares/line_fit.png" data-lightbox="least_squares" data-title="This problem is also overdetermined. So the algorithm uses the pseudoinverse to minimize the sum of squared distances."></a>
+            <a href="img/least_squares/cubic_fit.png" data-lightbox="least_squares" data-title="The problem is perfectly constrained; as a result, we get one polynomial solution that interpolates each of the given points."></a>
+            <a href="img/least_squares/degreeFour_fit.png" data-lightbox="least_squares" data-title="The problem is underconstrained; hence, an infinity of polynomials exists to fit the points."></a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="w-title">Least Squares Method/Gaussian Elimination</h2>
+                  <a href="https://github.com/BrandonHung343/Math-Stuff/blob/master/gaussianElimAndLeastSquares.py" target="_blank">
+                    <img src="img/github.png" style="max-height: 32px; float: right;" alt="GitHub">
+                  </a>
+                  <div class="w-more">
+                    <span class="w-ctegory">Math Code: View GitHub for detailed explanation</span><br> 
+                    <span class="w-date">5 June 2020</span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="work-box">
-            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+            <a href="img/chaos_game/tri.png" data-lightbox="chaos_game" data-title="Sierpinski's triangle emerges!">
               <div class="work-img">
-                <img src="img/work-2.jpg" alt="" class="img-fluid">
+                <img src="img/chaos_game/tri.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <a href="img/chaos_game/square.png" data-lightbox="chaos_game" data-title="Fractal squares, closely spaced together"></a>
+            <a href="img/chaos_game/pent.png" data-lightbox="chaos_game" data-title="Pentagons, which we see are more distributed"></a>
+            <a href="img/chaos_game/chaos.png" data-lightbox="chaos_game" data-title="Chaos is just a factor away; merely by changing the step size scale factor, our once beautiful fractal squares descend into chaos."></a>
+            <a href="img/chaos_game/walk.png" data-lightbox="chaos_game" data-title="My personal favorite: since all the lefts and rights in the circle cancel out, there's only one route left: to the center!"></a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="w-title">The Chaos Game</h2>
+                  <a href="https://github.com/BrandonHung343/Math-Stuff/blob/master/chaosGame.m" target="_blank">
+                    <img src="img/github.png" style="max-height: 32px; float: right;" alt="GitHub">
+                  </a>
+                  <div class="w-more">
+                    <span class="w-ctegory">Math Code: View Github for detailed explanation</span><br> 
+                    <span class="w-date">11 Mar. 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/l_interp/degreeSev.png" data-lightbox="l_int" data-title="Whatever this thing is, I just made up the points">
+              <div class="work-img">
+                <img src="img/l_interp/degreeSev.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <a href="img/l_interp/line.png" data-lightbox="l_int" data-title="Fits the line beautifully"></a>
+            <a href="img/l_interp/parab.png" data-lightbox="l_int" data-title="Classic x squared!"></a>
+            <a href="img/l_interp/cubic.png" data-lightbox="l_int" data-title="X cubed this time"></a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="w-title">Lagrange Interpolation</h2>
+                  <a href="https://github.com/BrandonHung343/Math-Stuff/blob/master/lagrangeInterpolation.py" target="_blank">
+                    <img src="img/github.png" style="max-height: 32px; float: right;" alt="GitHub">
+                  </a>
+                  <div class="w-more">
+                    <span class="w-ctegory">Math Code: View Github for detailed explanation</span><br> 
+                    <span class="w-date">9 May 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <!--div class="col-md-4">
+          <div class="work-box">
+            <a href="img/least_squares/line_fit.png" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/least_squares/line_fit.png" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
