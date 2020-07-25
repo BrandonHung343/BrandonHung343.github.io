@@ -153,6 +153,13 @@ a:hover {
   text-transform: uppercase;
 }
 
+.title-b {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff4500;
+}
+
 .subtitle-a {
   color: #4e4e4e;
 }
@@ -731,6 +738,11 @@ a:hover {
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
+.work-background {
+  background-color: #000080;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
 .work-box {
   margin-bottom: 3rem;
