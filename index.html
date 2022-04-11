@@ -75,7 +75,7 @@
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="intro-title mb-4">Brandon Hung</h1>
           <p class="intro-subtitle-2"> Carnegie Mellon University ECE, Class of 2021</p>
-          <p class="intro-subtitle"><span class="text-slider-items">Student,Maker,Robot Lover,Recreational Math Do-er</span><strong class="text-slider"></strong></p>
+          <p class="intro-subtitle"><span class="text-slider-items">Student,Maker,Robot Lover</span><strong class="text-slider"></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -99,18 +99,18 @@
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
                       <p><span class="title-s">Name: </span> <span>Brandon Hung</span></p>
-                      <p><span class="title-s">Credentials: </span><span>CMU Class of 2021</span></p>
-                      <p><span class="title-s">Areas of Study: </span> <span> Major ECE, Minors CS, Robotics</span></p>
-                      <p><span class="title-s">Interest and Hobbies: </span> Learning, making, reading, math competition problems, hiking, Muay Thai, guitar</p>
+                      <p><span class="title-s">Credentials: </span><span>CMU Undergrad Class of 2021, Graduate Class of 2022</span></p>
+                      <p><span class="title-s">Areas of Study: </span> <span> Major ECE, Minor Robotics</span></p>
+                      <p><span class="title-s">Interest and Hobbies: </span> Learning, making, reading, recreational math, hiking, MMA, music</p>
                     </div>
                   </div>
                 </div>
                 <div class="skill-mf">
                   <p class="title-s">Skills</p>
-                  <span style="font-weight:bold">Computer: </span> <span> Proficient in Python, C, MATLAB, LaTeX. Experience in ROS, computer vision, robot kinematics and state estimation. </span> <br>
+                  <span style="font-weight:bold">Computer: </span> <span> Proficient in Python, Julia, MATLAB, and LaTEx. Experience in C, JavaScript.  </span> <br>
                   <span style="font-weight:bold">Electrical: </span> <span> Basic experience in circuit design and SystemVerilog synthesis. </span><br>
                   <span style="font-weight:bold">Mechanical: </span> <span>Basic experience in SolidWorks, machining, and woodworking. Proficient in laser cutting and 3D printing.</span><br>
-                  <span style="font-weight:bold">Mechatronics: </span> <span>Proficient in Arduino, Raspberry Pi, and rapid prototyping.</span><br><br>
+                  <span style="font-weight:bold">Robotics: </span> <span>Research area: dynamics and optimal control. Experience with ROS, computer vision, and state estimation.</span><br><br>
                   <a href="https://github.com/BrandonHung343" target="_blank">
                     <img src="img/github.png" style="max-height: 32px; padding-left: 8px;" alt="GitHub">
                   </a>
@@ -131,13 +131,13 @@
                     </h5>
                   </div>
                   <p class="lead">
-                    Welcome to my site! My name is Brandon, a Senior at Carnegie Mellon University. I am currently working towards a B.S. in Electrical and Computer Engineering and a minor in Robotics.
+                    Welcome! My name is Brandon, a Masters Student at Carnegie Mellon University. I graduated with a B.S. in Electrical and Computer Engineering and a minor in Robotics, and am looking to get my M.S. at CMU in ECE.
                   </p>
                   <p class="lead">
                     My primary interest is in developing intelligent systems for robotics. I'd like to develop robust, reliable robots to help us make life easier. I am also passionate about cross-discipline learning and experimenting, particularly in seeing how ideas from different fields can be used to enhance others. 
                   </p>
                   <p class="lead">
-                    Outside of class, I am an officer for the CMU Robotics Club. To make up for all the time I spend sitting in front of a computer, I like to go walking/hiking, practice Muay Thai, and work on projects in the wood and metal shops.  
+                    Outside of class, I am affiliated with the CMU Robotics Club. To make up for all the time I spend sitting in front of a computer, I like to go walking/hiking, practice MMA, and work on projects in the wood and metal shops.  
                   </p>
                 </div>
               </div>
@@ -164,8 +164,101 @@
           </div>
         </div>
       </div>
-      <!--TODO: put in however many projects I want to list on here-->
+     
+     
+
+    
+
       <div class="row">
+     <!--TODO: put in however many projects I want to list below-->
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/robdog/transpos.JPG" data-lightbox="tp" data-title="A quadruped based on the MIT cheetah model, in simulation. Dynamics written as a Lagrangian in the form of a manipulator equation, and control written as a non-linear trajectory optimization problem solved using ALTRO from the Robotic Exploration Lab at CMU.">
+              <div class="work-img">
+                <img src="img/robdog/transpos.JPG" alt="" class="img-fluid">
+              </div>
+            </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Hybrid Trajectory Optimization of MIT Cheetah Quadruped</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Robotics: with demos on YouTube!</span><br> 
+                      <span class="w-date">August. 2021</span>
+                      <a href="https://youtu.be/UDQj26N4cw0" target="_blank">
+                        <img src="img/yt.png" style="max-height: 32px; float: right" alt="YouTube">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <a href="img/robdog/startpos.JPG" data-lightbox="tp" data-title="Initially, the quadruped walks on all fours"></a>
+            <a href="img/robdog/risepos.JPG" data-lightbox="tp" data-title="Once it has taken a few steps, it begins to rise up"></a>
+            <a href="img/robdog/walkpos.JPG" data-lightbox="tp" data-title="After balancing on its back legs, the robot takes several steps forwards"></a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/hopper/hops.JPG" data-lightbox="tp" data-title="A collection of various 3D hopping robot trajectories and behaviors, optimized using the ALTRO solver from the CMU Robotic Exploration Lab.">
+              <div class="work-img">
+                <img src="img/hopper/hops.JPG" alt="" class="img-fluid">
+              </div>
+            </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Hybrid Trajectory Optimization on a 3D Hopper </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Robotics: with demos on YouTube!</span><br> 
+                      <span class="w-date">June. 2021</span>
+                      <a href="https://youtu.be/ZBoMczLSS9g" target="_blank">
+                        <img src="img/yt.png" style="max-height: 32px; float: right; padding-right: 10px" alt="YouTube">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <a href="img/hopper/windup.JPG" data-lightbox="tp" data-title="Initially, the hopper prepares for a flip."></a>
+            <a href="img/hopper/flip.JPG" data-lightbox="tp" data-title="Hopper commits to the flip"></a>
+            <a href="img/hopper/stairhop.JPG" data-lightbox="tp" data-title="The robot is given the height and positions of the stair and jumps on top of it"></a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/swarmbot/swarm.JPG" data-lightbox="tp" data-title="A synchronous implementation of a paper by Hanlin Wang and Michael Rubenstein of Northwestern University (no affiliation). Swarm robots are randomly initialized and given the task to form any shape.">
+              <div class="work-img">
+                <img src="img/swarmbot/swarm.JPG" alt="" class="img-fluid">
+              </div>
+            </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Shape Formation with Homogeneous Swarm Robots</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Robotics: with demos on YouTube!</span><br> 
+                      <span class="w-date">10 Jan. 2021</span>
+                      <a href="https://github.com/BrandonHung343/Swarm-Research/tree/master/taskswap" target="_blank">
+                        <img src="img/github.png" style="max-height: 32px; float: right" alt="GitHub">
+                      </a>
+                      <a href="https://youtu.be/-fOacYD0xck" target="_blank">
+                        <img src="img/yt.png" style="max-height: 32px; float: right; padding-right: 10px" alt="YouTube">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <a href="img/swarmbot/init.JPG" data-lightbox="tp" data-title="Initially, the robots are randomly assigned goal and backup locations."></a>
+            <a href="img/swarmbot/almost.JPG" data-lightbox="tp" data-title="After local task swapping, the robots slowly start to form the letters"></a>
+            <a href="img/swarmbot/swarm.JPG" data-lightbox="tp" data-title="Eventually, the robots jostle along and randomly swap to the point where they finally form the proper shape"></a>
+          </div>
+        </div>
+  
+       
+
         <div class="col-md-4">
           <div class="work-box">
             <a href="img/least_squares/parabola_fit.png" data-lightbox="least_squares" data-title="Since the problem is overdetermined, the pseudoinverse is taken to minimize the sum of squared distances.">
@@ -260,7 +353,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Mobile Robot Programming Lab</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Robotics: See YouTube for Demo!</span><br> 
+                      <span class="w-ctegory">Robotics: with demos on YouTube!</span><br> 
                       <span class="w-date">1 Dec. 2019</span>
                       <a href="https://github.com/joshuadurham/CMU16362" target="_blank">
                         <img src="img/github.png" style="max-height: 32px; float: right" alt="GitHub">
@@ -288,7 +381,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Linear Inverted Pendulum Walker</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Robotics: See YouTube for Demo!</span><br> 
+                      <span class="w-ctegory">Robotics: with demos on YouTube!</span><br> 
                       <span class="w-date">10 Apr. 2020</span>
                       <a href="https://github.com/BrandonHung343/Intro-To-Robotics/blob/master/lab9/lipm.py" target="_blank">
                         <img src="img/github.png" style="max-height: 32px; float: right" alt="GitHub">
@@ -317,7 +410,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Backpack Mounted Robot Arm</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Robotics: See YouTube for Demo!</span><br> 
+                      <span class="w-ctegory">Robotics: with demos on YouTube!</span><br> 
                       <span class="w-date">28 Nov. 2017</span>
                       <a href="https://github.com/BrandonHung343/15-112-Term-Project" target="_blank">
                         <img src="img/github.png" style="max-height: 32px; float: right" alt="GitHub">
@@ -334,6 +427,8 @@
             its position. The ball location is converted to local arm coordinates and inverse kinematics is done to get the end effector to the location"></a>
           </div>
         </div>
+
+      
 
 
 
